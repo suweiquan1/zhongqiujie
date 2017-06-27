@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title></title>
+    <link rel="stylesheet" href="css/zhongqiu.css"/>
+    <link rel="stylesheet" href="css/zqanimated.css"/>
+    <script src="js/fontsize.js"></script>
+</head>
+<body>
+
+<div class="page page1">
+    <div>
+        <img src="images/logo.png" alt="" class="pic1 animated logo"/>
+        <img src="images/xiaoyun.png" alt="" class="pic2 animated1 xiaoyun infinite"/>
+        <img src="images/dayun.png" alt="" class="pic3 animated1 dayun infinite"/>
+    </div>
+</div>
+<div class="page page2 pageDown">
+    <div class="hide">
+        <img src="images/xing1.png" alt="" class="pic1 infinite shanyao animated2"/>
+        <img src="images/xing2.png" alt="" class="pic2 infinite shanyao animated2 delay2"/>
+        <img src="images/xing3.png" alt="" class="pic3 infinite shanyao animated2 delay3"/>
+        <img src="images/xing4.png" alt="" class="pic4 infinite shanyao animated2 delay4"/>
+        <img src="images/xian1.png" alt="" class="xian1"/>
+        <img src="images/xian2.png" alt="" class="xian2"/>
+        <img src="images/xian3.png" alt="" class="xian3"/>
+    </div>
+</div>
+<div class="page page3 pageDown">
+    <div class="hide">
+        <img src="images/zq_qiyuan.png" alt="" class="pic1 fanzhuan animated"/>
+        <img src="images/zq_qiyuan1.png" alt="" class="pic2 suofang animated1"/>
+        <img src="images/xiaoyun.png" alt="" class="pic3 animated1 xiaoyun infinite"/>
+        <img src="images/dayun.png" alt="" class="pic4 animated1 dayun infinite"/>
+    </div>
+</div>
+<div class="page page4 pageDown">
+    <div class="hide">
+        <img src="images/zq_xisu1.png" alt="" class="pic1"/>
+        <img src="images/zq_xisu2.png" alt="" class="pic2 paihuai animated"/>
+        <img src="images/zq_xisu.png" alt="" class="pic3 Yxuanzhuan animated2 infinite"/>
+        <img src="images/zq_xisu3.png" alt="" class="pic4 suofan animated"/>
+    </div>
+</div>
+<div class="page page5 pageDown">
+    <div class="hide">
+        <img src="images/zq_meishi1.png" alt="" class="pic1"/>
+        <img src="images/zq_meishi2.png" alt="" class="pic2 paihuai animated"/>
+        <img src="images/zq_meishi.png" alt="" class="pic3 Yxuanzhuan animated2 infinite"/>
+        <img src="images/zq_meishi3.png" alt="" class="pic4 suofan animated"/>
+    </div>
+</div>
+<div class="page page6 pageDown">
+    <div class="hide">
+        <img src="images/zq_shige1.png" alt="" class="pic1 gaodu animated"/>
+        <img src="images/zq_shige2.png" alt="" class="pic2 gaodu animated delay2"/>
+        <img src="images/zq_shige.png" alt="" class="pic3 fanzhuan animated"/>
+        <img src="images/zq_shige3.png" alt="" class="pic4 suofang animated1 delay3"/>
+    </div>
+</div>
+
+</body>
+
+<script src="js/zepto.min.js"></script>
+<script src="js/touch.min.js"></script>
+<script>
+
+    // 当期页码
+    var i=0;
+    // 总页数
+    var count=$(".page").length-1;
+
+    touch.on("body","swipeup",function(){
+        if(i<count){
+            $(".page").eq(i).addClass("pageUp");
+            $(".page").eq(i).children().addClass("hide");
+            i++;
+            $(".page").eq(i).removeClass("pageDown");
+            $(".page").eq(i).children().removeClass("hide");
+        }
+    });
+
+    touch.on("body","swipedown",function(){
+        if(i>0){
+            $(".page").eq(i).addClass("pageDown");
+            $(".page").eq(i).children().addClass("hide");
+            i--;
+            $(".page").eq(i).removeClass("pageUp");
+            $(".page").eq(i).children().removeClass("hide");
+        }
+    });
+
+</script>
+
+</html>
