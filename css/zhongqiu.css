@@ -1,0 +1,224 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.page{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    transition: transform 1s linear;
+}
+.page1,.page2{
+    background: url("../images/zhongqiu_bg.png") no-repeat;
+    background-size: 100% 100%;
+}
+.page3,.page4,.page5,.page6{
+    background: url("../images/zhongqiu_bg1.png") no-repeat;
+    background-size: 100% 100%;
+}
+.page1 .pic1{
+    display: block;
+    width: 2.63rem;
+    height: 4.55rem;
+    margin: 1.6rem auto 0 auto;
+}
+.page1 .pic2{
+    display: block;
+    width: 1.77rem;
+    height: 0.61rem;
+    transform: translateX(3.55rem) translateY(0.45rem);
+}
+.page1 .pic3{
+    display: block;
+    width: 2.15rem;
+    height: 0.71rem;
+    transform: translateX(0.3rem) translateY(0.8rem);
+}
+
+.page2 .pic1,.pic2,.pic3,.pic4{
+    display: block;
+    width: 2.82rem;
+    height: 0.68rem;
+    z-index: 333;
+}
+.page2 .pic1{
+    margin: 0.65rem 0 0 1.7rem;
+}
+.page2 .pic2{
+    margin: 0.87rem 0 0 0.95rem;
+}
+.page2 .pic3{
+    margin: 0.74rem 0 0 1.7rem;
+}
+.page2 .pic4{
+    margin: 0.61rem 0 0 0.95rem;
+}
+.page2 .xian1,.xian2,.xian3{
+    position: absolute;
+    display: block;
+}
+.page2 .xian1{
+    width: 0.75rem;
+    height: 1.55rem;
+    top: 0.98rem;
+    left: 1.26rem;
+}
+.page2 .xian2{
+    width: 0.84rem;
+    height: 1.48rem;
+    top: 2.53rem;
+    left: 1.26rem;
+}
+.page2 .xian3{
+    width: 0.81rem;
+    height: 1.24rem;
+    top: 4rem;
+    left: 1.24rem;
+}
+
+.page3 .pic1{
+    display: block;
+    width: 0.48rem;
+    height: 2.07rem;
+    position: absolute;
+    top: 0.27rem;
+    right: 0.72rem;
+}
+.page3 .pic2{
+    display: block;
+    width: 3.81rem;
+    height: 2.86rem;
+    margin: 1.31rem 0 0 1rem;
+}
+.page3 .pic3{
+    display: block;
+    width: 1.77rem;
+    height: 0.61rem;
+    margin-top: 2.7rem;
+}
+.page3 .pic4{
+    display: block;
+    width: 2.15rem;
+    height: 0.71rem;
+    margin-top: 1.2rem;
+}
+
+.page4{
+    overflow: hidden;
+}
+.page4 .pic1{
+    width: 3.05rem;
+    height: 3.42rem;
+    display: block;
+    margin: 0.2rem 0 0 0.21rem;
+    float: left;
+}
+.page4 .pic2{
+    display: block;
+    width: 0.94rem;
+    height: 3.02rem;
+    float: left;
+    margin: 0.47rem 0 0 0.62rem;
+}
+.page4 .pic3{
+    display: block;
+    width: 0.47rem;
+    height: 2.07rem;
+    float: left;
+    margin: 0.27rem 0 0 0.45rem;
+}
+.page4 .pic4{
+    display: block;
+    width: 6.11rem;
+    height: 6.9rem;
+    margin-left: 0.18rem;
+    padding-top: 0.2rem;
+}
+
+.page5{
+    overflow: hidden;
+}
+.page5 .pic1{
+    width: 4.18rem;
+    height: 2.89rem;
+    display: block;
+    margin: 0.63rem 0 0 0.15rem;
+    float: left;
+}
+.page5 .pic2{
+    display: block;
+    width: 0.46rem;
+    height: 2.72rem;
+    float: left;
+    margin: 0.7rem 0 0 0.15rem;
+}
+.page5 .pic3{
+    display: block;
+    width: 0.46rem;
+    height: 2.07rem;
+    float: left;
+    margin: 0.27rem 0 0 0.36rem;
+}
+.page5 .pic4{
+    display: block;
+    width: 6.18rem;
+    height: 7.08rem;
+    margin-left: 0.15rem;
+    padding-top: 0.15rem;
+}
+
+.page6 .pic1{
+    width: 2.02rem;
+    height: 2.63rem;
+    display: block;
+    position: absolute;
+    top: 0.6rem;
+    left: 0.38rem;
+}
+.page6 .pic2{
+    display: block;
+    width: 2.02rem;
+    height: 2.61rem;
+    position: absolute;
+    top: 0.6rem;
+    left: 2.98rem;
+}
+.page6 .pic3{
+    display: block;
+    width: 0.47rem;
+    height: 2.07rem;
+    position: absolute;
+    top: 0.27rem;
+    right: 0.46rem;
+}
+.page6 .pic4{
+    display: block;
+    width: 5.63rem;
+    height: 1.89rem;
+    margin: 3.66rem 0 0 0.36rem;
+}
+
+
+.hide{
+    display: none;
+}
+
+/*ÉÏ·­Ò³*/
+.pageUp{
+    transform: translateY(-100%);
+}
+/*ÉÏ·­Ò³*/
+
+/*ÏÂ·­Ò³*/
+.pageDown{
+    transform: translateY(100%);
+}
+/*ÏÂ·­Ò³*/
